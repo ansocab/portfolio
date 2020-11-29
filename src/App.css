@@ -268,13 +268,6 @@ ul > :first-child {
   }
 }
 
-/*cols="40"
-
-.contact-form input {
-  width: 100%;
-}
-*/
-
 .contact-form input:focus, .contact-form textarea:focus {
   border-color: #27496D;
   opacity: 70%;

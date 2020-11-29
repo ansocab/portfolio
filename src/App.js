@@ -7,7 +7,7 @@ import About from "./About";
 import Projects from "./Projects";
 import Contact from "./Contact";
 
-import { Container, Row, Col, Image, Button, ButtonGroup } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 
 
 function App() {
