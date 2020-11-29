@@ -12,7 +12,8 @@ export default function Contact () {
             </div>
             <div className="d-flex justify-content-center"><ContactButtons /></div>
             <div className="mt-4 mb-5 d-flex justify-content-center form-container">
-                <form name="contact" method="POST" data-netlify="true" content-type="application/x-www-form-urlencoded" className="contact-form">
+                <form name="contact" method="post" className="contact-form">
+                    <input type="hidden" name="form-name" value="contact" />
                     <Row className="d-flex justify-content-center"><input type="text" name="name" placeholder="Name*"></input></Row>
                     <Row className="d-flex justify-content-center"><input type="email" name="email" placeholder="Email*"></input></Row>
                     <Row className="d-flex justify-content-center"><textarea name="message" placeholder="Message*" rows="10"></textarea></Row>
