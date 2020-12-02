@@ -11,7 +11,7 @@ export default function Intro () {
         <div className="anchor" id="home"></div>
         <Row className="justify-content-center align-items-center intro-container">
           <Col className="col-12 col-md-7 order-md-2 text-center text-md-left pb-5 pb-md-0 pt-3 pt-md-0 intro-title-container">
-              <h1 className="pb-2">Ana Caballero</h1>
+              <h1 className="pb-2">Ana Sofia Caballero</h1>
               <h3>Junior Web and App Developer</h3>
           </Col>
           

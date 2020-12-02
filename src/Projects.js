@@ -52,7 +52,9 @@ export default function Projects() {
                         : ""}
                         <h4>{item.name}</h4>
                     </div>
-                    <div className="pt-2">{item.description.split("\n").map((item, key) => {return <p key={key}>{item}<br/></p>})}</div>
+                        {item.description ? 
+                        <div className="pt-2">{item.description.split("\n").map((item, key) => {return <p key={key}>{item}<br/></p>})}</div>
+                        : <div className="pt-2"></div>}
                     <p className="built-with-paragraph">Built with:</p>
                     <ul>{item.technologies?.map((item, key) => {return <li key={key}>{item}</li>})}</ul>
                     <span>
@@ -65,7 +67,7 @@ export default function Projects() {
                 </Col>
 
                 <Col className="col-12 col-md-5 order-md-1 pb-3 pb-md-0">
-                  {item.screenshots?.length ? <img className={item.category.includes("web") ? "screenshot-web" : "screenshot-mobile"} src={require(`./assets/${item.screenshots[0]}`).default} alt={`${item.name} screenshot`}/> : ""}
+                  {item.screenshots?.length ? <a className="screenshot-link" href={item.onImageClickURL}><img className={item.category.includes("web") ? "screenshot-web" : "screenshot-mobile"} src={require(`./assets/${item.screenshots[0]}`).default} alt={`${item.name} screenshot`}/></a> : ""}
                 </Col>
               </Row>
             ) : '')}

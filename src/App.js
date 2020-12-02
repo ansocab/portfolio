@@ -20,7 +20,10 @@ function App() {
         <About />
         <Projects />
         <Contact />
-        <footer className="d-flex justify-content-center">© 2020 Ana Sofia Caballero</footer>
+        <footer className="d-flex justify-content-center"> {/* Add flex-column here when adding separation line*/}
+          {/*<div className="footer-separation-line"></div>*/}
+          <div>© 2020 Ana Sofia Caballero</div>
+        </footer>
       </Container>
     </div>
   );
