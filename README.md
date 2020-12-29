@@ -1,6 +1,6 @@
 # Portfolio Website
 
-![Portfolio screenshot](src/assets/portfolio-screenshot.png)
+
 
 
 ## Live Demo
