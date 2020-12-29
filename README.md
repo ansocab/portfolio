@@ -18,3 +18,4 @@
 ## Resources
 
 - Icons: [FontAwesome](https://fontawesome.com/)
+- Header background: [SVG Backgrounds](https://www.svgbackgrounds.com/)
