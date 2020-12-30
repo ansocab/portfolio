@@ -17,7 +17,6 @@ export default function Projects() {
         setProjects([]);
         const filtered = portfolio.map(p => ({ ...p, filtered: p.category.includes(filter) }));
         setProjects(filtered);
-        console.log(projects);
       }, [filter]);
 
 
@@ -44,7 +43,7 @@ export default function Projects() {
 
         <div>
             {projects.map((item, i) => item.filtered === true ? (
-                <Row key={item.name} className="justify-content-around align-items-center mb-5 ml-md-auto mr-md-auto project-container">
+                <Row key={item.name} className="justify-content-around align-items-center mb-5 ml-md-auto mr-md-auto project-container m-1">
                 <Col className="col-12 col-md-6 order-md-2 text-md-left pb-4 pb-md-0 pt-3 pt-md-0 intro-title-container info-col">
                     <div className="project-title-section">
                         {item.logo ? 
@@ -67,7 +66,7 @@ export default function Projects() {
                 </Col>
 
                 <Col className="col-12 col-md-5 order-md-1 pb-3 pb-md-0">
-                  {item.screenshots?.length ? <a className="screenshot-link" href={item.onImageClickURL}><img className={item.category.includes("web") ? "screenshot-web" : "screenshot-mobile"} src={require(`./assets/${item.screenshots[0]}`).default} alt={`${item.name} screenshot`}/></a> : ""}
+                  {item.screenshots?.length ? <a className="screenshot-link" href={item.onImageClickURL} target="_blank" rel="noreferrer"><img className={item.category.includes("web") ? "screenshot-web" : "screenshot-mobile"} src={require(`./assets/${item.screenshots[0]}`).default} alt={`${item.name} screenshot`}/></a> : ""}
                 </Col>
               </Row>
             ) : '')}

@@ -11,7 +11,7 @@ export default function Contact () {
                 <div className="separation-line"></div>
             </div>
             <div className="d-flex justify-content-center"><ContactButtons /></div>
-            <div className="mt-4 mb-5 d-flex justify-content-center form-container">
+            <div className="mt-4 mb-5 p-2 d-flex justify-content-center form-container">
                 <form name="contact" method="post" className="contact-form">
                     <input type="hidden" name="form-name" value="contact" />
                     <Row className="d-flex justify-content-center"><input type="text" name="name" placeholder="Name*"></input></Row>

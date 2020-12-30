@@ -14,17 +14,17 @@ function App() {
 
   return (
     <div className="App">
-      <Container>
         <header><Navigation /></header>
         <Intro />
+      <Container>
         <About />
         <Projects />
         <Contact />
+      </Container>
         <footer className="d-flex justify-content-center"> {/* Add flex-column here when adding separation line*/}
           {/*<div className="footer-separation-line"></div>*/}
-          <div>© 2020 Ana Sofia Caballero</div>
+          <div>{`© ${new Date().getFullYear()} Ana Sofia Caballero`}</div>
         </footer>
-      </Container>
     </div>
   );
 }

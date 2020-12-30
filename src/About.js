@@ -10,7 +10,7 @@ export default function About() {
                 <h2>About</h2>
                 <div className="separation-line"></div>
             </div>
-            <Row className="justify-content-between">
+            <Row className="justify-content-between p-3">
                 <Col className="col-12 col-md-6 lg-mb-0 mb-4 mb-md-0 pl-0 pr-0 about-col">
                     <div className="p-4 mr-md-4">
                     <h4>Hi, I'm Ana,</h4>
@@ -24,7 +24,8 @@ export default function About() {
                     <ul>
                         <li>React.js, Vanilla JavaScript</li>
                         <li>HTML5, CSS3</li>    {/*If focus on Full Stack: HTML below Git*/}
-                        <li>Node.js, Express</li>   
+                        <li>Node.js, Express</li> 
+                        <li>SQL, MongoDB</li>  
                         <li>Git, GitHub</li>
                         <li>Sketch</li>
                         <li>Swift, Xcode</li>

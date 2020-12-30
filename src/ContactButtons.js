@@ -12,7 +12,7 @@ export default function ContactButtons() {
         <div className="justify-content-md-center intro-button-icons">
              <a className="mr-4" href="https://github.com/ansocab" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} /></a>
              <a className="mr-4" href="https://www.linkedin.com/in/ana-sofia-caballero/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedinIn} /></a>
-             <button onClick={handleMail} id="mail-button"><FontAwesomeIcon icon={faEnvelope} /></button>
+             <button onClick={handleMail} className="mail-button"><FontAwesomeIcon icon={faEnvelope} /></button>
         </div>
     )
 }
