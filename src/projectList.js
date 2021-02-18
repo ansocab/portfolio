@@ -1,13 +1,19 @@
 export const portfolio = [
   {
+    name: "TCGA Searcher | Full-Stack",
+    description: "Cancer research tool",
+    moreInfo: "https://www.youtube.com/watch?v=e6jhw8hdqPU&t=84s",
+    technologies: ["React.js", "Express/Node.js", "MongoDB"],
+    repositoryURL: "https://github.com/ansocab/cancer-gene-xx-client",
+    liveURL: "https://tcgasearcher.netlify.app/",
+    onImageClickURL: "https://tcgasearcher.netlify.app/",
+    screenshots: ["tcga-searcher-screenshot.png"],
+    category: ["all", "web"],
+  },
+  {
     name: "Pokemon Rock Paper Scissors | Full-Stack",
-    description:
-      "A pokemon card game using rock paper scissors for the gameplay",
-    technologies: [
-      "React.js, Custom CSS",
-      "Express/Node.js",
-      "MongoDB",
-    ],
+    description: "Pokemon card game using rock paper scissors for the gameplay",
+    technologies: ["React.js, Custom CSS", "Express/Node.js", "MongoDB"],
     repositoryURL: "https://github.com/ansocab/pokefight-client",
     liveURL: "https://pokemonrps.netlify.app/",
     onImageClickURL: "https://pokemonrps.netlify.app/",
